@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "item-component":"../../../components/base/template/template"
+  }
+}

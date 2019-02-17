@@ -1,12 +1,14 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/base/index/index",
+    "pages/base/userConsole/userConsole",
+    "pages/base/storageConsole/storageConsole",
+    "pages/base/databaseGuide/databaseGuide",
+    "pages/base/addFunction/addFunction",
+    "pages/base/deployFunctions/deployFunctions",
+    "pages/base/chooseLib/chooseLib",
+    "pages/base/template/template",
+    "pages/increment/index/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -14,5 +16,25 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "测试01",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "networkTimeout": {
+    "request": 20000,  
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true,
+  "tabBar": {
+    
+    "selectedColor":"#0066ff",
+    "list": [{
+      "pagePath": "pages/base/index/index",
+      "text": "基础"   
+    },
+    {
+      "pagePath": "pages/increment/index/index",
+      "text": "进阶"
+    }]
+  },
+  "usingComponents": {}
 }

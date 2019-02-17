@@ -1,0 +1,29 @@
+<!--pages/base/template/template.wxml-->
+<view class="part">添加新内容</view>
+<form bindsubmit="addone">
+  <view class="label">
+    <text class="label-name">姓名</text>
+    <view class="label-value">
+      <input value="{{tmpName}}" name="name" type='text' placeholder='姓名'></input>
+    </view>
+  </view>
+  <view class="label2">
+    <text class='label2-name'>年龄</text>
+    <view class="label2-value">
+      <input value="{{tmpAge}}" name="age" type='number' placeholder='年龄'></input>
+    </view>
+  </view>
+
+  <button form-type='submit'>添加</button>
+</form>
+<text class="part">组件使用</text>
+<view>
+  <item-component list="{{list}}">
+    <!-- 模板内容 -->
+    <view>插入到组件slot内容</view>
+  </item-component>
+</view>
+<view class="part">自己渲染</view>
+<view wx:for="{{list}}" wx:key="{{item.name}}" wx:for-index="idx">
+  {{idx}}:{{item.name}}
+</view>

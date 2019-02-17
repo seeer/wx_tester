@@ -1,0 +1,42 @@
+/* pages/base/template/template.wxss */
+.part{
+  font-weight: bold;
+  margin: 0 10rpx;
+}
+
+.label{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rpx 20rpx;
+
+}
+.label .label-name{
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: bottom;
+  height: 1.4rem;
+  padding-right: 20rpx;
+}
+.label .label-value{
+  white-space: nowrap;
+  display: inline-block;
+}
+.label .label-value input{
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+  font-size: 1rem;
+}
+
+
+.label2{
+ display: flex;
+ padding: 0 20rpx;
+}
+.label2 .label2-name{
+ padding-right: 20rpx;
+}
+.label2 .label2-value{
+  flex: 1;
+}
